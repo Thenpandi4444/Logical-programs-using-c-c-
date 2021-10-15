@@ -1,2 +1,2 @@
-# Logical-programs-using-c-c-
+# Logical-programs-using-c&c++
 Programs
