@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+  char *s;
+  //output  ,,  a11472o5t6.....0210111100
+  s=malloc(1024*sizeof(char));
+  scanf("%s",s);
+  s=realloc(s,strlen(s));
+  int a[10],len=strlen(s),i;
+  for(i=0;i<10;i++){
+      a[i]=0;
+  }
+  for(i=0;i<len;i++){
+   if(s[i]>='0'&&s[i]<='9'){
+       a[s[i]-'0']++;
+   }
+  }
+  for(i=0;i<10;i++){
+      printf("%d",a[i]);
+  }
+  free(s);
+return 0;}
